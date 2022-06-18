@@ -1,5 +1,5 @@
 body{
-    background-image: url(/static/world.png);
+    background-image: url(../static/world.png);
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ body{
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .25em; /* Adjust as needed */
-  animation: 
+  animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
