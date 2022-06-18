@@ -1,0 +1,109 @@
+body{
+    background-image: url(/static/world.png);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.center {
+  width: 50%;
+  bottom: 300px;
+  border: 3px solid rgb(26, 54, 131);
+  padding: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:30px;
+}
+
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid grey; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .25em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20% }
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+    font-family: 'Allura', cursive;
+}
+
+.hero-btn:hover{
+    border: 1px solid blue;
+    background: blue;
+    transition: 1s;
+
+}
+
+.container{
+  color: white;
+  text-align: center;
+}
+
+.div1 {
+  float: left;
+  color: rgb(255, 255, 255);
+}
+
+.div2 {
+  float: right;
+  color: white;
+}
+
+.container1 {
+  width: 50%;
+  min-height: 1vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: transparent;
+  text-align: center;
+}
+
+.text1 span {
+  font-size: 40px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  animation: zoomup 3s ease infinite;
+  animation-delay: calc(100ms * var(--i));
+}
+
+.dot {
+  display: block;
+}
+
+@keyframes zoomup {
+  0%,
+  100% {
+    color: #ffb703;
+    filter: blur(0.5px);
+    text-shadow: 0 0 10px #ffb703, 0 0 20px #ffb703, 0 0 30px #ffb703,
+      0 0 40px #ffb703, 0 0 50px #ffb703, 0 0 60px #ffb703;
+  }
+
+  50% {
+    filter: blur(0);
+    color: #fff;
+    text-shadow: none;
+  }
+}
