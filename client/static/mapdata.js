@@ -939,7 +939,7 @@ main_settings:{
       inactive: "no"
     },
     ZA: {
-      name: "South Africa",
+      name: "South Africa", 
       hide: "no",
       inactive: "no"
     },
@@ -955,64 +955,6 @@ main_settings:{
     }
   },
   locations: {
-    "0": {
-      name: "Paris",
-      lat: "48.866666670",
-      lng: "2.333333333",
-      type: "triangle"
-    },
-    "1": {
-      name: "Tokyo",
-      lat: "35.666666670",
-      lng: "139.750000000",
-      type: "triangle"
-    },
-    "2": {
-      name: "Shanghai",
-      lat: "31.100000000",
-      lng: "121.366666700",
-      type: "square"
-    },
-    "3": {
-      name: "New York",
-      lat: "40.700000000",
-      lng: "-73.900000000",
-      type: "square"
-    },
-    "4": {
-      name: "Los Angeles",
-      lat: "34.000000000",
-      lng: "-118.250000000",
-      type: "circle"
-    },
-    "5": {
-      name: "Cape Town",
-      lat: "-35.916666670",
-      lng: "18.366666670",
-      type: "circle"
-    },
-    "6": {
-      name: "Santiago",
-      lat: "-33.450000000",
-      lng: "-70.666666670",
-      type: "circle"
-    },
-    "7": {
-      name: "Cairo",
-      lat: "30.050000000",
-      lng: "31.250000000",
-      type: "triangle"
-    },
-    "8": {
-      name: "Singapore",
-      lat: "1.300000000",
-      lng: "103.833333300",
-      color: "#1c4922",
-      description: "Company Headquarters",
-      type: "star",
-      size: "40",
-      opacity: "1"
-    }
   },
   regions: {
     "0": {
