@@ -27,4 +27,4 @@ def translate_text(target, text):
     translated_text = result["translatedText"]
     detected_lang = result["detectedSourceLanguage"]
 
-translate_text("en","এটা একটা পরীক্ষা")
+translate_text("en","hola, me llamo Sudiptto")
