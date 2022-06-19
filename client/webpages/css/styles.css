@@ -25,6 +25,7 @@ body{
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .25em; /* Adjust as needed */
+  width: 15%;
   animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
@@ -33,7 +34,7 @@ body{
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 20% }
+  to { width: 15% }
 }
 
 .hero-btn{
@@ -203,4 +204,10 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.options{
+  text-align: center;
+ 
+  color: darkblue;
 }
