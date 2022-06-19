@@ -8,7 +8,7 @@ main_settings:{
 	
 		//State defaults
     state_description: "Connect?",
-    state_color: "#3b42a1", // Blue 
+    state_color: "#100538", // Dark Blue 
     state_hover_color: "#8bae54",
 		border_size: 1.5,		
 		border_color: '#ffffff',
