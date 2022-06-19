@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/mapdata.js"></script>
     <script src="./scripts/worldmap.js"></script>
     <title> Main </title>
@@ -13,7 +14,7 @@
         <div style="text-align: center; color: white;">
         <h1 class="typewriter"> FINDER</h1>
         <!--NOTE TO MEMBERS: MAKE THIS BUTTON CONNECT TO CHATROOM-->
-        <a href="" class="hero-btn">CONNECT</a>
+        <a href="app.html" class="hero-btn">CONNECT</a>
         </div>
     <h1 id="map" class="center"> </h1>
 
@@ -51,35 +52,38 @@
           </div>
     </div>
 -->
+<!--NOTE: EVERYTHING BELOW IS FOR THE GALLERY WHICH DISPLAYS THE CULTURE OF EACH CONTINENT  -->
+<!--North American Culture-->
+<!-- DISPLAYS THE IMAGE RIGHT BELOW THE MAP-->
 <div class="container">
     <div class="mySlides">
       <div class="numbertext">1 / 6</div>
-      <img src="../static/world.png" style="width:10%">
+      <img src="/client/assets/gallery/north_america_culture.png" style="width:20%">
     </div>
-
+<!--South American Culture-->
     <div class="mySlides">
       <div class="numbertext">2 / 6</div>
-      <img src="img_5terre_wide.jpg" style="width:100%">
+      <img src="/client/assets/gallery/south_american_culture.png" style="width:20%">
     </div>
-
+<!--EUROPEAN CULTRUE-->
     <div class="mySlides">
       <div class="numbertext">3 / 6</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
+      <img src="/client/assets/gallery/europe_culture.png" style="width:20%">
     </div>
-
+    <!-- African Culture -->
     <div class="mySlides">
       <div class="numbertext">4 / 6</div>
-      <img src="img_lights_wide.jpg" style="width:100%">
+      <img src="/client/assets/gallery/african_culture.png" style="width:20%">
     </div>
-
+    <!--Asian Culture -->
     <div class="mySlides">
       <div class="numbertext">5 / 6</div>
-      <img src="img_nature_wide.jpg" style="width:100%">
+      <img src="/client/assets/gallery/asian_culture.png" style="width:20%">
     </div>
-
+    <!--AUSTRALIA CULTURE-->
     <div class="mySlides">
       <div class="numbertext">6 / 6</div>
-
+      <img src="/client/assets/gallery/australian_culture.png" style="width:20%">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -88,29 +92,32 @@
     <div class="caption-container">
       <p id="caption"></p>
     </div>
-
+    <!-- DISPLAYS THE IMAGE BELOW THE IMAGE BEING SHOWN -->
+    <!-- NOTE: THEY ALL HAVE THE SAME HEIGHT. IT ALSO TAKES THE ALT VALUE AND DISPLAYS IT IN THE BLUE -->
     <div class="row">
       <div class="column">
-        <img class="demo cursor" src="../static/world.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        <img class="demo cursor" src="/client/assets/gallery/north_america_culture.png" style="width:100%; height: 150px;" onclick="currentSlide(1)" alt="North American Culture">
       </div>
       <div class="column">
-        <img class="demo cursor" src="../static/world.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        <img class="demo cursor" src="/client/assets/gallery/south_american_culture.png" style="width:100%; height: 150px;" onclick="currentSlide(2)" alt=
+        "South American Culture">
+      </div> 
+      <div class="column">
+        <img class="demo cursor" src="/client/assets/gallery/europe_culture.png" style="width:100%; height: 150px;" onclick="currentSlide(3)" alt="European Culture">
       </div>
       <div class="column">
-        <img class="demo cursor" src="../static/world.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        <img class="demo cursor" src="/client/assets/gallery/african_culture.png" style="width:95%; height: 150px;" onclick="currentSlide(4)" alt="African Culture">
       </div>
       <div class="column">
-        <img class="demo cursor" src="../static/world.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        <img class="demo cursor" src="/client/assets/gallery/asian_culture.png" style="width:100%; height: 150px;" onclick="currentSlide(5)" alt="Asian Culture">
       </div>
       <div class="column">
-        <img class="demo cursor" src="../static/world.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="../static/world.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        <img class="demo cursor" src="/client/assets/gallery/australian_culture.png" style="width:100%; height: 150px;" onclick="currentSlide(6)" alt="Australian Culture">
       </div>
     </div>
   </div>
 
+  <!--SCRIPT FOR THE GALLERY-->
   <script>
   let slideIndex = 1;
   showSlides(slideIndex);
@@ -122,7 +129,7 @@
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
-
+  
   function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
