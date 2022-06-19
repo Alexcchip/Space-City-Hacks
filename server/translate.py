@@ -1,6 +1,6 @@
 import os
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'M:\Coding\Space-City-Hacks\server\clean-yew-353717-c95da0018c51.json'
+#os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'M:\Coding\Space-City-Hacks\server\clean-yew-353717-c95da0018c51.json'
 
 
 def translate_text(target, text):
@@ -27,4 +27,4 @@ def translate_text(target, text):
     translated_text = result["translatedText"]
     detected_lang = result["detectedSourceLanguage"]
 
-translate_text("en","hola, me llamo Sudiptto")
+translate_text("en","Hola, soy much gusta!")
