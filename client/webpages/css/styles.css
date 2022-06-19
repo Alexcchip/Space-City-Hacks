@@ -37,12 +37,7 @@ body{
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-<<<<<<< HEAD
-  to { width: 10% }
-=======
-  to { width: 15% }
->>>>>>> abadae1ad1c5e682099e688d586b7895404a94c0
+  width: 10%;
 }
 
 .hero-btn{
